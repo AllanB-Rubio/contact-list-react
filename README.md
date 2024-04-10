@@ -1,8 +1,19 @@
-# React + Vite
+# Simple Contact Management Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple contact management application built using React. It allows users to view a list of contacts and select individual contacts to view their details.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View a list of contacts
+- Select a contact to view their details
+- Navigate back to the list view
+
+
+## Deployed Site Link 
+
+https://66163e3d76886ca3f4b2ad2d--resilient-nasturtium-0c38a6.netlify.app/
+
+
+## Author 
+
+Allan Rubio
