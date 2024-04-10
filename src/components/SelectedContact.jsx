@@ -16,7 +16,7 @@ export default function SelectedContact({
         const result = await response.json();
 
         setContact(result);
-        console.log(contact);
+
       } catch (error) {
         console.error(error);
       }
@@ -24,23 +24,14 @@ export default function SelectedContact({
     fetchSingleContact();
   }, [selectedContactId]); //By including selectedContactId in the dependency array, it ensures that the effect runs whenever the selectedContactId changes, allowing the component to fetch the correct contact details for the selected contact and update accordingly.
 
-  return (
+return (
     <>
-      <table>
-        <thead>
-          <tr>
-            <th colSpan="3">Contact Information</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Name: {contact.name}</td>
-            <td> Email: {contact.email}</td>
-            <td> Phone: {contact.phone}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="contact-details">
+        <h2>Contact Information</h2>
+        <p><strong>Name:</strong> {contact.name}</p>
+        <p><strong>Email:</strong> {contact.email}</p>
+        <p><strong>Phone:</strong> {contact.phone}</p>
+      </div>
 
       <button onClick={() => setSelectedContactId(null)}>
         Go Back to Contact List
